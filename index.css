@@ -1,0 +1,153 @@
+/* RESET */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-image: url("jox1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: rgb(196, 165, 165);
+}
+
+nav a.active {
+    color: blue;
+    font-weight: bold;
+}
+
+/* UL */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(61, 45, 45);
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+}
+
+/* BOX */
+.jox {
+    background-color: var(--box-color);
+    padding: 20px;
+    border-radius: 12px;
+
+    margin: 20px auto;
+    width: 60%;
+    max-width: 700px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* STATS */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 10px;
+
+    max-width: 600px;
+    margin: 20px auto;
+
+    background-color: rgb(238, 218, 187);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px inset;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    font-size: small;
+    text-align: center;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .jox {
+        width: 90%;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .jox {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}

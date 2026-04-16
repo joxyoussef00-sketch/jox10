@@ -1,0 +1,147 @@
+/* RESET */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-image: url("jox2.jpeg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(196, 165, 165);
+}
+
+nav a.active {
+    color: blue;
+    font-weight: bold;
+}
+
+/* UL */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(61, 45, 45);
+}
+
+/* TITLES */
+h1, h2 {
+    text-align: center;
+    color: rgb(10, 7, 7);
+}
+
+/* BOX */
+.box {
+    background-color: var(--box-color);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 700px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* DIV */
+div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    font-size: small;
+    text-align: center;
+    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form, div {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 95%;
+    }
+}
