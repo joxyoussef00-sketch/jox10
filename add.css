@@ -182,5 +182,8 @@ footer {
         font-size: 12px;
     }
 }
+td {
+    white-space: nowrap;
+}
 
     
