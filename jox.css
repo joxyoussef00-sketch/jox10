@@ -116,17 +116,10 @@ footer {
     }
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    form {
-        max-width: 100%;
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* بدل column */
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
